@@ -1,6 +1,8 @@
-namespace PlayerManager2
+using System;
+
+namespace PlayerManager3
 {
-    public class Player
+    public class Player: IComparable<Player>
     {
         public string Name { get; }
         public int Score { get; }
@@ -9,6 +11,11 @@ namespace PlayerManager2
         {
             Name = name;
             Score = score;
+        }
+
+        public int CompareTo(Player other)
+        {
+            return Score.CompareTo(other.Score);
         }
     }
 }
