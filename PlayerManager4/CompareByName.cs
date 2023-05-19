@@ -7,6 +7,11 @@ namespace PlayerManager4
 {
     public class CompareByName: IComparer<Player>
     {
-        
+        private readonly bool ascendente;
+
+        public CompareByName(bool ascendente)
+        {
+            this.ascendente = ascendente;
+        }
     }
 }
