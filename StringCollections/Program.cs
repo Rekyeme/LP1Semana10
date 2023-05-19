@@ -19,7 +19,7 @@ namespace StringCollections
             Queue<String> queue = new Queue<string>();
 
             //HashSet T
-            HashSet<String> hashset = new HashSet<string>();
+            HashSet<String> hashSet = new HashSet<string>();
 
 
         }
