@@ -1,12 +1,27 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace StringCollections
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //List T
+            List<String> list = new List<string>();
+
+            //Stack T
+            Stack<String> stack = new Stack<string>();
+
+            //Queue T
+            Queue<String> queue = new Queue<string>();
+
+            //HashSet T
+            HashSet<String> hashset = new HashSet<string>();
+
+
         }
     }
 }
