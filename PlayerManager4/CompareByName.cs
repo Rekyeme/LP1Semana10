@@ -13,5 +13,14 @@ namespace PlayerManager4
         {
             this.ascendente = ascendente;
         }
+
+        public Comparison(Player x, Player y)
+        {
+            int final = string.Compare(x.Name, y.Name);
+            if (!ascendente)
+                final *= -1;
+
+            return final;
+        }
     }
 }
